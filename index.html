@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SNOTE Kamu</title>
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+    .overlay {
+      background: rgba(255, 240, 230, 0.85);
+      min-height: 100vh;
+      backdrop-filter: blur(6px);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    header {
+      background: rgba(255, 87, 34, 0.9);
+      color: white;
+      padding: 14px 20px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      border-bottom: 2px solid rgba(255,255,255,0.2);
+    }
+    .note {
+      background: rgba(255, 255, 255, 0.95);
+      margin: 25px auto;
+      max-width: 700px;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeUp 1.3s ease;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .note h3 {
+      margin-top: 0;
+      color: #2b2b2b;
+    }
+    .note p {
+      color: #444;
+      font-size: 16px;
+    }
+    a {
+      display: block;
+      color: #e65100;
+      margin: 6px 0;
+      text-decoration: none;
+      font-weight: 500;
+      word-break: break-all;
+      transition: 0.3s;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #bf360c;
+    }
+    footer {
+      text-align: center;
+      color: #555;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>SNOTE.VIP</header>
+
+    <div class="note">
+      <h3>Note 05/11/2025</h3>
+      <p> Pemandangan Hari Ini — Cahaya Senja Membelai Langit dengan Lembut</p>
+      <div id="daftar-link"></div>
+    </div>
+
+    <footer>© 2025 Snote Versi Kamu</footer>
+  </div>
+
+  <script>
+    const links = [
+      "https://lnk.ink/Vid33yyv1d.short.gy.bigg1",
+      "https://lnk.ink/Vid33yyv1d.short.gy.glsbu1",
+      "https://lnk.ink/Vid33yyv1d.short.gy.bvyjk1",
+      "https://lnk.ink/Vid33yyv1d.short.gy.laydp1",
+      "https://lnk.ink/Vid33yyv1d.short.gy.lkigb1",
+      "https://lnk.ink/Vid33yyv1d.short.gy.vbdf1",
+      "https://lnk.ink/Vid33yyv1d.short.gy.mluf1",
+      "https://lnk.ink/Vid33yyv1d.short.gy.odha1",
+      "https://lnk.ink/Vid33yyv1d.short.gy.plhg1",
+      "https://lnk.ink/Vid33yyv1d.short.gy.Vksj1",
+      "https://lnk.ink/Vid33yyv1d.short.gy.hfpw1",
+      "https://lnk.ink/Vid33yyv1d.short.gy.gsilm1",
+      "https://lnk.ink/Vid33yyv1d.short.gy.ppdo1",
+      "https://lnk.ink/Vid33yyv1d.short.gy.pobv1"
+    ];
+
+    const daftar = document.getElementById("daftar-link");
+    links.forEach(link => {
+      const a = document.createElement("a");
+      a.href = link;
+      a.textContent = link;
+      daftar.appendChild(a);
+    });
+  </script>
+</body>
+</html>
